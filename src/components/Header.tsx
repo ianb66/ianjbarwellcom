@@ -8,6 +8,7 @@ export default function Header() {
     { name: 'About', href: '#about' },
     { name: 'Products', href: '#products' },
     { name: 'Resources', href: '#resources' },
+    { name: 'Book a Call', href: '#book-a-call' },
   ];
 
   return (
@@ -22,7 +23,7 @@ export default function Header() {
 
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
-              {navigation.map((item) => (
+              {navigation.slice(0, 3).map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
@@ -31,6 +32,12 @@ export default function Header() {
                   {item.name}
                 </a>
               ))}
+              <a
+                href="#book-a-call"
+                className="inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-blue-600 to-teal-500 text-white font-semibold rounded-full hover:opacity-90 transition-opacity duration-200 text-sm shadow-md"
+              >
+                Book a Free Call
+              </a>
             </div>
           </div>
 

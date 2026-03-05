@@ -255,7 +255,7 @@ const About = ({ onOpenModal }: AboutProps) => {
             <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
               <div className="text-4xl font-bold mb-2">1</div>
               <h4 className="font-bold mb-2">Test my AI Software</h4>
-              <p className="text-sm">CompeteWithClaude, ProPageReview, and ThinkLearn are live and ready to use</p>
+              <p className="text-sm">Smart Product Builder, CompeteWithClaude, ProPageReview, and ThinkLearn are live and ready to use</p>
             </div>
             <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
               <div className="text-4xl font-bold mb-2">2</div>
@@ -281,6 +281,14 @@ const About = ({ onOpenModal }: AboutProps) => {
             >
               Get In Touch
             </button>
+            <a
+              href="https://tidycal.com/ianjbarwell/30-minute-meeting"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 bg-blue-800 text-white font-bold rounded-lg hover:bg-blue-900 transition-colors shadow-lg"
+            >
+              Book a FREE Strategy Call
+            </a>
           </div>
         </div>
       </div>
