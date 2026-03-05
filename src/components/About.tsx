@@ -75,7 +75,7 @@ const About = ({ onOpenModal }: AboutProps) => {
             <div className="flex items-start gap-3">
               <CheckCircle className="w-6 h-6 text-teal-600 flex-shrink-0 mt-1" />
               <p className="text-lg text-gray-700">
-                <strong>Launched three AI-powered softwares</strong> – CompeteWithClaude (competitive analysis for affiliates), ThinkLearn (AI education platform), and ProPageReview (Chrome extension for instant product reviews)
+                <strong>Launched four AI-powered softwares</strong> – Smart Product Builder (AI digital product creation system), CompeteWithClaude (competitive analysis for affiliates), ThinkLearn (AI education platform), and ProPageReview (Chrome extension for instant product reviews)
               </p>
             </div>
             <div className="flex items-start gap-3">
@@ -199,8 +199,14 @@ const About = ({ onOpenModal }: AboutProps) => {
             <div className="flex items-start gap-4">
               <Rocket className="w-8 h-8 text-teal-600 flex-shrink-0" />
               <div>
-                <h4 className="text-lg font-bold text-gray-900 mb-2">AI-Powered Product Creation Platform (February 2026)</h4>
-                <p className="text-gray-700">So you can create any product you dream of with AI</p>
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  Smart Product Builder{" "}
+                  <span className="inline-block px-2 py-0.5 bg-teal-100 text-teal-700 text-sm font-semibold rounded-full">✓ Launched March 2026</span>
+                </h4>
+                <p className="text-gray-700">
+                  My AI-powered digital product creation system is now live.{" "}
+                  <a href="https://smartproductbuilder.com" target="_blank" rel="noopener noreferrer" className="text-teal-600 font-semibold hover:underline">Check it out →</a>
+                </p>
               </div>
             </div>
             <div className="flex items-start gap-4">

@@ -8,18 +8,88 @@ export default function Products() {
             My AI-Powered Products
           </h2>
           <p className="text-xl text-gray-600">
-            Three tools I've built to help entrepreneurs leverage AI
+            Four tools I've built to help entrepreneurs leverage AI
           </p>
         </div>
 
         {/* Products Grid */}
         <div className="space-y-16">
-          {/* Product 1 - CompeteWithClaude (Content Left, Image Right) */}
+
+          {/* FEATURED PRODUCT - Smart Product Builder */}
+          <div className="group border-2 border-blue-500 rounded-2xl p-8 md:p-12 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl bg-gradient-to-br from-blue-50 to-teal-50">
+            {/* Featured Badge */}
+            <div className="mb-6">
+              <span className="inline-block px-4 py-1 bg-gradient-to-r from-blue-700 to-teal-500 text-white text-sm font-bold rounded-full uppercase tracking-wide">
+                ★ Featured Product — Now Live
+              </span>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Content */}
+              <div>
+                <p className="text-sm uppercase text-gray-500 mb-2">PRODUCT 1 - SmartProductBuilder</p>
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 break-words">
+                  Smart Product Builder
+                </h3>
+                <p className="text-xl text-teal-600 mb-6">
+                  AI-Powered Digital Product Creation System
+                </p>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <svg className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Create laser-targeted digital products without guesswork</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">4-module video system + purpose-built AI software</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Repeatable workflow — build products again and again</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Adapts as AI evolves — future-proof system</span>
+                  </li>
+                </ul>
+                <div className="flex items-center gap-4">
+                  <span className="inline-block px-4 py-2 bg-teal-50 text-teal-700 rounded-full text-sm font-medium">
+                    Special Launch Price
+                  </span>
+                  <a
+                    href="https://smartproductbuilder.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-8 py-3 bg-gradient-to-r from-blue-700 to-teal-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
+                  >
+                    Start Cashing In Today
+                  </a>
+                </div>
+              </div>
+              {/* Product Image */}
+              <div className="rounded-xl h-80 overflow-hidden flex items-center justify-center">
+                <img
+                  src="/images/smart-product-builder.png"
+                  alt="Smart Product Builder Software Box"
+                  className="h-full object-contain drop-shadow-xl"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Product 2 - CompeteWithClaude (Content Left, Image Right) */}
           <div className="group border-2 border-gray-200 rounded-2xl p-8 md:p-12 transition-all duration-300 hover:border-blue-500 hover:scale-[1.02] hover:shadow-2xl">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               {/* Content */}
               <div>
-                <p className="text-sm uppercase text-gray-500 mb-2">PRODUCT 1 - CompeteWithClaude</p>
+                <p className="text-sm uppercase text-gray-500 mb-2">PRODUCT 2 - CompeteWithClaude</p>
                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 break-words">
                   CompeteWithClaude
                 </h3>
@@ -77,7 +147,7 @@ export default function Products() {
             </div>
           </div>
 
-          {/* Product 2 - ProPageReview (Content Right, Image Left) */}
+          {/* Product 3 - ProPageReview (Content Right, Image Left) */}
           <div className="group border-2 border-gray-200 rounded-2xl p-8 md:p-12 transition-all duration-300 hover:border-blue-500 hover:scale-[1.02] hover:shadow-2xl">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               {/* Product Image */}
@@ -90,7 +160,7 @@ export default function Products() {
               </div>
               {/* Content */}
               <div className="order-1 md:order-2">
-                <p className="text-sm uppercase text-gray-500 mb-2">PRODUCT 2 - ProPageReview</p>
+                <p className="text-sm uppercase text-gray-500 mb-2">PRODUCT 3 - ProPageReview</p>
                 <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
                   ProPageReview
                 </h3>
@@ -140,12 +210,12 @@ export default function Products() {
             </div>
           </div>
 
-          {/* Product 3 - ThinkLearn (Content Left, Image Right) */}
+          {/* Product 4 - ThinkLearn (Content Left, Image Right) */}
           <div className="group border-2 border-gray-200 rounded-2xl p-8 md:p-12 transition-all duration-300 hover:border-blue-500 hover:scale-[1.02] hover:shadow-2xl">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               {/* Content */}
               <div>
-                <p className="text-sm uppercase text-gray-500 mb-2">PRODUCT 3 - ThinkLearn</p>
+                <p className="text-sm uppercase text-gray-500 mb-2">PRODUCT 4 - ThinkLearn</p>
                 <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
                   ThinkLearn
                 </h3>
@@ -202,6 +272,7 @@ export default function Products() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
